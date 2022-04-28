@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+Name: Asim Khan
+Date: 04.27.22
+Section: ITEC 236 940
+This page contains information about the website as a whole. 
+-->
+<html lang="en-US">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<meta charset="utf-8" />
+		<meta name="description" content="Computers" />
+		<meta name="keywords" content="HTM" />
+		<title>About</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"
+		/>
+	</head>
+
+	<body>
+		<!-- This section meets the requirement for a menu for easy, clear, and concise navigation. -->
+		<nav id="mobile_menu"></nav>
+		<h1 id="mySubtitle">BestPC4U</h1>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="productivity.htm">Productivity</a></li>
+				<li><a href="entertainment.htm">Entertainment</a></li>
+				<li><a href="about.htm">About</a></li>
+				<li><a href="contact.htm">Contact</a></li>
+			</ul>
+		</nav>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+		<script>
+			$(function () {
+				$('#nav_menu').slicknav();
+			});
+		</script>
+		<h2 class="brand_header">About <span class="brand_accent">Us</span></h2>
+
+		<p class="para">
+			I have been fortunate enough to have grown up in a household where
+			computers were prominent and I have been using one since 2000. I grew up
+			on Windows, then I switched to Mac in 2016 and now I have both in 2022.
+			Having delved deep into them over the years, I want to pass along my
+			knowledge on them and encompass it into the two things people use them for
+			- to do work and to have fun.
+		</p>
+		<!-- This section meets the requirement for containing at least two links. -->
+		<div class="link-container">
+			<a class="link" href="https://siu.edu">School website</a> <br />
+			<a class="link" href="entertainment.htm"
+				>Interested in gaming? Take a look here!</a
+			>
+		</div>
+		<!-- This section meets the requirement for containing an audio. -->
+		<embed
+			type="audio/mp3"
+			src="audio.mp3"
+			width="300"
+			height="100"
+			autoplay="true"
+		/>
+	</body>
+</html>

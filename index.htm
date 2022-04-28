@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+Name: Asim Khan
+Date: 04.27.22
+Section: ITEC 236 940
+This is the home page for the penultimate course project website. 
+-->
+<html lang="en-US">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<meta charset="utf-8" />
+		<meta name="description" content="Computers" />
+		<meta name="keywords" content="HTM" />
+		<title>BestPC4U</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"
+		/>
+	</head>
+
+	<body>
+		<!-- This section meets the requirement for a menu for easy, clear, and concise navigation. -->
+		<nav id="mobile_menu"></nav>
+		<h1 id="mySubtitle">BestPC4U</h1>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="productivity.htm">Productivity</a></li>
+				<li><a href="entertainment.htm">Entertainment</a></li>
+				<li><a href="about.htm">About</a></li>
+				<li><a href="contact.htm">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- This section meets the requirement for including at least one image. -->
+		<img
+			src="https://cdn.pixabay.com/photo/2017/01/22/12/07/imac-1999636_960_720.png"
+			alt="Computers"
+		/>
+		<!-- This section meets the requirement for containing at least one list. -->
+		<h2 class="brand_header">
+			Take a look at this website if you are in search of a
+			<span class="brand_accent">Computer</span> that can...
+		</h2>
+		<ul class="card_container">
+			<li class="card">
+				<p>Work with spreadsheets, documents, and the like</p>
+			</li>
+			<li class="card"><p>Perform video editing</p></li>
+			<li class="card"><p>Watch shows and movies in high definition</p></li>
+			<li class="card"><p>Engage in gaming</p></li>
+			<li class="card"><p>Do a little bit of everything</p></li>
+		</ul>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+		<script>
+			$(function () {
+				$('#nav_menu').slicknav();
+			});
+		</script>
+	</body>
+</html>

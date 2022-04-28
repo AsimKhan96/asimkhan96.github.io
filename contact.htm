@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Name: Asim Khan
+Date: 04.27.22
+Section: ITEC 236 940
+This is the contact page for the website. 
+-->
+<html lang="en-US">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<meta charset="utf-8" />
+		<meta name="description" content="Computers" />
+		<meta name="keywords" content="HTM" />
+		<title>Productivity</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"
+		/>
+	</head>
+
+	<body>
+		<!-- This section meets the requirement for a menu for easy, clear, and concise navigation. -->
+		<nav id="mobile_menu"></nav>
+		<h1 id="mySubtitle">BestPC4U</h1>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="productivity.htm">Productivity</a></li>
+				<li><a href="entertainment.htm">Entertainment</a></li>
+				<li><a href="about.htm">About</a></li>
+				<li><a href="contact.htm">Contact</a></li>
+			</ul>
+		</nav>
+
+		<h2 class="brand_header">Contact <span class="brand_accent">Us</span></h2>
+
+		<p class="para">
+			For any inquiries beyond the information we have already offered, please
+			fill out this form and we will get back to you as soon as we can.
+		</p>
+
+		<form class="style-form" action="submission.htm" method="post">
+			<input
+				placeholder="First Name"
+				type="text"
+				id="fname"
+				name="fname"
+				minlength="4"
+				maxlength="25"
+				required
+			/><br />
+			<input
+				placeholder="Last Name"
+				type="text"
+				id="address"
+				name="address"
+				minlength="4"
+				maxlength="50"
+				required
+			/><br />
+			<input
+				placeholder="Street address"
+				type="text"
+				id="city"
+				name="city"
+				minlength="4"
+				maxlength="25"
+				required
+			/><br />
+			<input
+				placeholder="Email address"
+				type="email"
+				id="phone"
+				name="email"
+				minlength="10"
+				maxlength="25"
+				required
+			/><br />
+			<select name="state" id="state" required>
+				<option value="Illinois">Illinois</option>
+				<option value="Washington">Washington</option>
+				<option value="Michigan">Michigan</option>
+				<option value="California">California</option>
+				<option value="Texas">Texas</option>
+			</select>
+			<br />
+			<br />
+			<label for="message">Message</label><br />
+			<textarea
+				placeholder="Please type your inquiry here."
+				id="message"
+				name="message"
+				minlength="20"
+				maxlength="200"
+				rows="4"
+				cols="50"
+				required
+			></textarea>
+
+			<br />
+			<input class="btn-primary" type="submit" value="Send" />
+			<input type="reset" value="Reset" />
+		</form>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+		<script>
+			$(function () {
+				$('#nav_menu').slicknav();
+			});
+		</script>
+	</body>
+</html>
